@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Itpln</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('images/itpln.jpg') no-repeat center center/cover;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: hsl(199, 91%, 66%);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #8ae4f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>LOGIN</h2>
+        <form action="finish.html">
+            <input type="text" name="nama" placeholder="Nama" required>
+            <input type="text" name="nim" placeholder="NIM" required>
+            <input type="text" name="jurusan" placeholder="Jurusan" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <button onclick="window.location.href='finish.html'">Lihat GIF</button>
+</body>
+</html>
