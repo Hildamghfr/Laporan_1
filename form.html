@@ -45,13 +45,18 @@
 <body>
     <div class="container">
         <h2>LOGIN</h2>
-        <form action="finish.html">
-            <input type="text" name="nama" placeholder="Nama" required>
-            <input type="text" name="nim" placeholder="NIM" required>
-            <input type="text" name="jurusan" placeholder="Jurusan" required>
-            <button type="submit">Submit</button>
+        <form id="studentForm">
+            <input type="text" id="name" placeholder="Nama" required><br>
+            <input type="text" id="nim" placeholder="NIM" required><br>
+            <input type="text" id="jurusan" placeholder="Jurusan" required><br>
+            <button type="button" onclick="submitForm()">Submit</button>
         </form>
     </div>
-    <button onclick="window.location.href='finish.html'">Lihat GIF</button>
+    
+    <script>
+        function submitForm() {
+            window.location.href = "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTF0NGRkenh0aWlwZmNxcnl3em1ic3NkeXc4OWFtZXlpanJmMnc0MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QAYo9Pl0scAagBwNPS/giphy.gif";
+        }
+    </script>
 </body>
 </html>
